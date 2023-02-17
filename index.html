@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Le Comte de Monte-Cristo</title>
+   <style>
+      .accent {
+         color: rgb(233, 20, 20);
+         background-color: rgba(179, 255, 0, 0.281);
+      }
+   </style>
+</head>
+
+<body>
+
+   <script>
+      
+      const mainPrototype = "François Picot";
+      const mainPerson = "Edmond Dantes";
+      const fakefrands = ["Lupian", "Solari", "Chobar"];
+      
+      const places = {
+         spyingfor: "England" ,
+         hiddentreasure: "Milan" ,
+         placeoforigin: "Paris"
+      };
+
+      const countFakefrands = fakefrands.length;
+      const listofFakefrandsWithComa = fakefrands.map(fakefrands => " " + fakefrands)
+      
+      document.body.innerHTML = `
+   <p>One of the prototypes of the novel's hero, ${mainPerson}, was a shoemaker from Nîmes named ${mainPrototype}, who was
+      engaged to a wealthy woman. In 1807, on the denunciation of ${countFakefrands} of his envious "friends" 
+      <span class="accent">${listofFakefrandsWithComa}</span>
+      who falsely accused him of spying for <span class="accent">${places.spyingfor}</span>, François Picot was arrested and thrown into the fortress of
+      Fenestrelle, where he spent about seven years. His fourth friend, Antoine Allusion, not taking part in the plot,
+      but knowing of it, cowardly kept silent about the treachery. François Picot' fiancée, after two years of fruitless
+      waiting, was forced to marry ${fakefrands[0]}.
+   </p>
+   <p>For the first two years, François Picot did not even know what exactly he was imprisoned for. In prison, FrançoisPicot dug a small
+      underground passage into a nearby cell where a wealthy Italian priest, Father Tori, was being held. They became
+      friends, and François Picot nursed the sick priest, who a year later, before he died, told him the secret of the
+      hidden
+      treasure in <span class="accent">${places.hiddentreasure}</span>. After the fall of the imperial power in 1814, François François Picot went free, seized the
+      treasure
+      bequeathed to him and under a different name appeared in <span class="accent">${places.placeoforigin}</span>, where he devoted 10 years to revenge for treachery
+      and perfidy.
+   </p>
+   <p>Schaubar was the first to be killed, but to Loopyan, his most hated enemy, a scoundrel who had stolen not only his
+      freedom but also his love, François Picot presented the most cruel revenge: he enticed Loopyan's daughter into
+      marriage
+      with the criminal and then put him on trial and shame, which she could not endure and died from the shock. Then
+      François Picot organized the burning of a restaurant belonging to Lupian and plunged him into poverty. Lupian
+      son was
+      implicated (or falsely accused) of stealing jewelry and the boy was imprisoned, and then Francois stabbed Lupian
+      himself. Last he poisoned ${fakefrands[1]}, but, unaware of Antoine Allud's knowledge, was kidnapped and killed by him.
+   </p>
+   `;
+
+
+   </script>
+
+</body>
+
+</html>
